@@ -1,0 +1,30 @@
+﻿@model Movie
+
+@* <a asp-controller="Home" asp-action="Index">Got to Home</a> *@
+
+
+<h2>Movie Save View</h2>
+
+<hr />
+
+<form asp-action="Save" method="post">
+    <div class="mb-3">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="genre" class="control-label"></label>
+        <input asp-for="genre" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+
+@section Scripts {
+    <script>
+        console.log("This is our Movie save page")
+    </script>
+}
