@@ -2,11 +2,35 @@
 
 <h1>Studnet List</h1>
 
-<div>
-    <ul>
-        @foreach (var item in Model)
-        {
-            <li>@item.Name</li>
-        }
-    </ul>
+<div class="row">
+    <div>
+        <a asp-action="Create" asp-controller="Students" class="btn btn-primary">Create New Student</a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Course</th>
+                <th scope="col">Age</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Email</td>
+                    <td>@item.Course</td>
+                    <td>@item.Age</td>
+                    <td>
+                        <a asp-action="Edit" asp-controller="Students" asp-route-id="@item.Id">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

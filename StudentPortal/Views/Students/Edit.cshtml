@@ -1,9 +1,9 @@
 ﻿@model StudentPortal.Models.Student
 
-<h1>Create Studnt</h1>
-<hr/>
+<h1>Edit Studnt</h1>
+<hr />
 
-<form asp-action="Create" method="post">
+<form asp-action="Edit" method="post">
     <div class="mb-3">
         <label asp-for="Name" class="control-label"></label>
         <input asp-for="Name" class="form-control" />
@@ -23,7 +23,6 @@
         <label asp-for="Age" class="control-label"></label>
         <input asp-for="Age" class="form-control" />
     </div>
-    
-    <button type="submit" class="btn btn-primary">Save</button>
-</form>
 
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
