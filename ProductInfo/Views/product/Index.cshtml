@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ProductInfo.Models.Product>
+
+<h2>Product Page</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            @* <partial name="_ProductCard" model="item" /> *@
+            @* <partial name="Product/_ProductCard" model="item" /> *@
+            @* <partial name="~/Views/Product/_ProductCard.cshtml" model="item" /> *@
+
+            @await Html.PartialAsync("_ProductCard", item)
+        </div>
+    }
+</div>
+
+
+@* <table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.Price</td>
+                <td>@item.Stock</td>
+            </tr>
+        }
+    </tbody>
+</table> *@

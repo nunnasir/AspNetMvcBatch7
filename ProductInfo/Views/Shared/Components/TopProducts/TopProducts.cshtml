@@ -1,0 +1,8 @@
+﻿@model IEnumerable<ProductInfo.Models.Product>
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>@item.Name - @item.Price.ToString("C")</li>
+    </ul>
+}
