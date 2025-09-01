@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OstadEmptyProject", "OstadE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OstadFirstMVC", "OstadFirstMVC\OstadFirstMVC.csproj", "{73AE178F-9DF2-4D02-B102-664D685E3E79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentPortal", "StudentPortal\StudentPortal.csproj", "{5403B988-639B-44F7-AEFA-DBD121A5E310}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{73AE178F-9DF2-4D02-B102-664D685E3E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73AE178F-9DF2-4D02-B102-664D685E3E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73AE178F-9DF2-4D02-B102-664D685E3E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5403B988-639B-44F7-AEFA-DBD121A5E310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5403B988-639B-44F7-AEFA-DBD121A5E310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5403B988-639B-44F7-AEFA-DBD121A5E310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5403B988-639B-44F7-AEFA-DBD121A5E310}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

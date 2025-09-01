@@ -21,6 +21,11 @@ namespace OstadFirstMVC.Controllers
                 return View(movie);
             }
 
+            if (string.IsNullOrEmpty(movie.Name))
+            {
+                return 
+            }
+
             return View();
         }
 

@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Student>
+
+<h1>Studnet List</h1>
+
+<div>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item.Name</li>
+        }
+    </ul>
+</div>
