@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentPortal", "StudentPor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductInfo", "ProductInfo\ProductInfo.csproj", "{0F90355F-3E1E-4198-8358-D572F42014C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpEssential", "CSharpEssential\CSharpEssential.csproj", "{6BE89783-4B38-445D-B173-0457CCA6982C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0F90355F-3E1E-4198-8358-D572F42014C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F90355F-3E1E-4198-8358-D572F42014C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F90355F-3E1E-4198-8358-D572F42014C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BE89783-4B38-445D-B173-0457CCA6982C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE89783-4B38-445D-B173-0457CCA6982C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE89783-4B38-445D-B173-0457CCA6982C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE89783-4B38-445D-B173-0457CCA6982C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
