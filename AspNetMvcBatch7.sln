@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQExample", "LINQExample\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAdoDemoApp", "FirstAdoDemoApp\FirstAdoDemoApp.csproj", "{0C9CE8B3-9D16-4286-91BA-E58F95FEA98F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOWithSPOutputParam", "ADOWithSPOutputParam\ADOWithSPOutputParam.csproj", "{287FFB08-AABC-4B92-83B7-3460505DCF4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{0C9CE8B3-9D16-4286-91BA-E58F95FEA98F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C9CE8B3-9D16-4286-91BA-E58F95FEA98F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C9CE8B3-9D16-4286-91BA-E58F95FEA98F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287FFB08-AABC-4B92-83B7-3460505DCF4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287FFB08-AABC-4B92-83B7-3460505DCF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287FFB08-AABC-4B92-83B7-3460505DCF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287FFB08-AABC-4B92-83B7-3460505DCF4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

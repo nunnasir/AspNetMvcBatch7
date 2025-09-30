@@ -5,11 +5,11 @@ namespace FirstAdoDemoApp.Controllers;
 
 public class EmployeeController : Controller
 {
-    private readonly EmployeeDataAccessLayer _dataAccessLayer;
+    private readonly EmployeeDataAccessLayerWithSp _dataAccessLayer;
 
     public EmployeeController()
     {
-        _dataAccessLayer = new EmployeeDataAccessLayer();
+        _dataAccessLayer = new EmployeeDataAccessLayerWithSp();
     }
 
     public IActionResult Index()
