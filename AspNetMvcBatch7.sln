@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOWithSPOutputParam", "ADO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkExample", "EntityFrameworkExample\EntityFrameworkExample.csproj", "{1D7744CF-8B97-43FC-B928-107D97A7BB24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidExample", "DependencyInjectionExample\SolidExample.csproj", "{70DB332F-3694-4652-9D31-84C464B71F58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIExample", "DIExample\DIExample.csproj", "{8DE33E8F-BEB3-4748-8185-6494D5B38036}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{1D7744CF-8B97-43FC-B928-107D97A7BB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D7744CF-8B97-43FC-B928-107D97A7BB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D7744CF-8B97-43FC-B928-107D97A7BB24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DB332F-3694-4652-9D31-84C464B71F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DB332F-3694-4652-9D31-84C464B71F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DB332F-3694-4652-9D31-84C464B71F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DB332F-3694-4652-9D31-84C464B71F58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE33E8F-BEB3-4748-8185-6494D5B38036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE33E8F-BEB3-4748-8185-6494D5B38036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE33E8F-BEB3-4748-8185-6494D5B38036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE33E8F-BEB3-4748-8185-6494D5B38036}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
