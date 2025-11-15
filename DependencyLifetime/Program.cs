@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddTransient<TransiantOperation>();
 builder.Services.AddScoped<ScopedOperation>();
 builder.Services.AddSingleton<SingleTonOperation>();
+builder.Services.AddSingleton<IEngine, DieselEngine>();
 
 // Add services to the container.
 
