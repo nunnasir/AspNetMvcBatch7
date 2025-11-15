@@ -15,6 +15,11 @@ public class PetrolEngine : IEngine
     {
         Console.WriteLine("Petrol Engine Starting....");
     }
+
+    public void Type()
+    {
+        Console.WriteLine("This is a petrol engine");
+    }
 }
 
 public class ElectricEngine : IEngine
@@ -24,3 +29,5 @@ public class ElectricEngine : IEngine
         Console.WriteLine("Petrol Engine Starting....");
     }
 }
+
+// 

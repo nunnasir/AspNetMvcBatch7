@@ -2,16 +2,22 @@
 
 public class Car
 {
-    private IEngine _engine;
+    //public IEngine _engine;
 
-    public Car(IEngine engine)
-    {
-        _engine = engine;
-    }
+    //public Car(IEngine engine)
+    //{
+    //    _engine = engine;
+    //}
 
-    public void Drive()
+    public void Drive(IEngine engine)
     {
-        _engine.Start();
+        //if (engine == null)
+        //{
+        //    throw new ArgumentNullException(nameof(engine), "Engine cannot be null");
+        //}
+
+        engine.Start();
         Console.WriteLine("Car is Running..");
     }
+
 }
