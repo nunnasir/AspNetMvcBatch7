@@ -2,6 +2,11 @@
 
 using DIExample;
 
+Car petrolCar = new Car(new PetrolEngine());
+petrolCar._engine.Start();
+
+
+
 //Car petrolCar = new Car();
 //petrolCar.Drive();
 
@@ -15,14 +20,17 @@ using DIExample;
 //petrolCar.Drive();
 
 
-IEngine dieselEngine = new DieselEngine();
+//IEngine dieselEngine = new DieselEngine();
 
-PetrolEngine petrolEngine = new PetrolEngine();
-petrolEngine.Type();
-petrolEngine.Start();
+//PetrolEngine petrolEngine = new PetrolEngine();
+//petrolEngine.Type();
+//petrolEngine.Start();
 
-DieselEngine diselEngine = new DieselEngine();
-diselEngine.Start();
+//DieselEngine diselEngine = new DieselEngine();
+//diselEngine.Start();
+
+
+
 
 
 

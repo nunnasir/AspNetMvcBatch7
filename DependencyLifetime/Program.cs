@@ -1,11 +1,15 @@
 using DependencyLifetime;
+using DependencyLifetime.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddTransient<TransiantOperation>();
 builder.Services.AddScoped<ScopedOperation>();
 builder.Services.AddSingleton<SingleTonOperation>();
+
 builder.Services.AddSingleton<IEngine, DieselEngine>();
+builder.Services.AddScoped<IEngine, PetrolEngine>();
 
 // Add services to the container.
 

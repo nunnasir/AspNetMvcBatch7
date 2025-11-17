@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIExample", "DIExample\DIEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyLifetime", "DependencyLifetime\DependencyLifetime.csproj", "{829E6619-12CB-4DE4-A7E7-FE5148A1743D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareExample", "MiddlewareExample\MiddlewareExample.csproj", "{6AD8D236-77AF-4647-BE5B-12B90900F580}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{829E6619-12CB-4DE4-A7E7-FE5148A1743D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{829E6619-12CB-4DE4-A7E7-FE5148A1743D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{829E6619-12CB-4DE4-A7E7-FE5148A1743D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD8D236-77AF-4647-BE5B-12B90900F580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD8D236-77AF-4647-BE5B-12B90900F580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD8D236-77AF-4647-BE5B-12B90900F580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD8D236-77AF-4647-BE5B-12B90900F580}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
