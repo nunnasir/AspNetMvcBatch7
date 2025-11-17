@@ -1,3 +1,5 @@
+using MiddlewareExample.Middleware;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -51,6 +53,8 @@ app.Use(async (context, next) =>
 
 
 //app.UseHttpsRedirection();
+
+app.UseIpRateLimiting();
 
 app.UseAuthorization();
 
