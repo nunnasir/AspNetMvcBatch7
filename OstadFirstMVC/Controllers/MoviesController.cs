@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using OstadFirstMVC.Execptions;
 using OstadFirstMVC.Models;
 
 namespace OstadFirstMVC.Controllers
@@ -7,7 +8,7 @@ namespace OstadFirstMVC.Controllers
     //Movies/List
     //Movies/Details/1
 
-    [Authorize(Roles = "Admin")]
+    //[Authorize(Roles = "Admin")]
     public class MoviesController : Controller
     {
         public IActionResult Save()
@@ -26,7 +27,7 @@ namespace OstadFirstMVC.Controllers
 
             if (string.IsNullOrEmpty(movie.Name))
             {
-                return 
+                return View();
             }
 
             return View();
@@ -66,18 +67,37 @@ namespace OstadFirstMVC.Controllers
         //[Route("BanglaMovie/Index")]
         public IActionResult List()
         {
-            Movie movie = GetMovie();
+            try
+            {
+                string name = null;
+                int length = name.Length;
+            }
+            catch (Exception e)
+            {
 
-            return View(movie);
+
+                throw new Exception("Custom Error Message: An error occurred in List action.", e);
+            }
+            
+
+            List<Movie> movies = GetMovies();
+
+            return View(movies);
         }
 
         //[Route("BanglaMovie/Details/{id:int}/{category}")]
         //[Route("movies/{id:int}")]
-        public IActionResult Details(int id, string category)
+        public IActionResult Details(int id)
         {
-            Movie movie = GetMovie();
+            //Movie? movie = GetMovie();
+            Movie? movie = null;
 
-            return Content($"Movie Details with id: {id}, with category: {category}");
+            if (movie == null)
+                throw new NotFoundException("This Id Is not Valid");
+
+
+
+            return View(movie);
         }
 
         private Movie GetMovie()
@@ -85,7 +105,18 @@ namespace OstadFirstMVC.Controllers
             return new Movie
             {
                 Id = 1,
-                Name = "Animal"
+                Name = "Animal",
+                genre = "Action"
+            };
+        }
+
+        private List<Movie> GetMovies()
+        {
+            return new List<Movie>
+            {
+                new Movie { Id = 1, Name = "Movie 1", genre = "Action" },
+                new Movie { Id = 2, Name = "Movie 2", genre = "Comedy" },
+                new Movie { Id = 3, Name = "Movie 3", genre = "Drama" }
             };
         }
     }

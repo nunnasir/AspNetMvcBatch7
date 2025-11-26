@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
+using OstadFirstMVC.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddTransient<GlobalExceptionMiddleware>();
+
 
 
 // Add services to the container.
@@ -31,6 +35,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 app.UseRouting();
 
