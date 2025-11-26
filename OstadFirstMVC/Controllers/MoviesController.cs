@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OstadFirstMVC.Models;
 
 namespace OstadFirstMVC.Controllers
@@ -6,6 +7,7 @@ namespace OstadFirstMVC.Controllers
     //Movies/List
     //Movies/Details/1
 
+    [Authorize(Roles = "Admin")]
     public class MoviesController : Controller
     {
         public IActionResult Save()
@@ -13,6 +15,7 @@ namespace OstadFirstMVC.Controllers
             return View();
         }
 
+        
         [HttpPost]
         public IActionResult Save(Movie movie)
         {
